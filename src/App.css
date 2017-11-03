@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro');
+
+/*font-family: 'Source Sans Pro', sans-serif;main
+/*font-family: 'Playfair Display', serif; title*/
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: large;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+}
+h4{
+  text-align: center;
+  color: #3498db;
+  font-size: 40px;
+  font-weight: bold;
+}
+/*=========================================================*/
+/*Seccion del Nav*/
+header{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  background: #222222;
+  color: white;
+  padding:  20px 10px;
+  font-size: larger;
+
+}
+header img{
+  width: 70px;
+}
+nav{
+  border-right: 2px solid white;
+
+}
+nav a{
+  text-decoration: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.nav1 a{
+  color: white;
+}
+.nav2 a{
+  color: #2196F3;
+}
+header i{
+  margin-left:  25px;
+  background: #FFC107;
+  padding: 20px 15px;
+  color: black;
+  font-size: 30px;
+}
+/*==========================================================*/
+/*Seccion terminos y condiciones*/
+.terms-conditions{
+  padding: 10px 290px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+/*==========================================================*/
+/*Seccion Home*/
+.home{
+  margin: 0;
+}
+.header{
+  background-image: url('./images/landing-splash-bg.png');
+  text-align: center;
+  padding: 130px;
+  background-size: cover;
+  background-position: initial;
+  color: white;
+  font-size:larger ;
+}
+/*==========================================================*/
+/*Single Product*/
+.productSingle{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.itemProdutc span{
+  display: block;
+  text-align: right;
+  font-size: larger;
+
+}
+.productSingle img {
+  width: 55%;
+}
+.cuadroDeInformacion{
+  border: 2px solid #999999;
+  width: 35%;
+  padding: 15px;
+}
+.conditionAndMeasurements{
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+  align-items: center;
+
+}
+.conditionAndMeasurements div p{
+  width: 33%;
+  text-decoration: underline;
+}
+.conditionAndMeasurements button{
+  color: white;
+  background: #F44336;
+  border: 2px solid #F44336;
+  border-radius: 30px;
+  width: 150px;
+  padding: 0;
+  height: 50px;
+  font-weight: bold;
+}
+/*Featured Products ==============*/
+.featured-products{
+  padding: 15px;
+}
+h3{
+  color: #999999;
+}
+.featuredApi{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.containerOfproducts{
+  border: 1px solid #999999;
+  box-shadow: 2px 2px 2px 1px #999999;
+  width: 32%;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+.containerOfproducts img{
+  width: 98%;
+}
+.price{
+  color: #999999;
+}
+
+.botonesBrowse{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.botonesBrowse a{
+  text-decoration: none;
+  color: #2196F3;
+  border: 3px solid #2196F3;
+  margin: 20px;
+  text-align: center;
+  padding: 18px 0;
+  width: 250px;
+  height: 70px;
+
+}
+/*========================================================*/
+/*All products*/
+.allProducts{
+  background: white;
+  width: 15%;
+  height: 60px;
+  display:block;
+  margin: 40px auto;
+  color: #F44336;
+  border: 2px solid #F44336;
+  font-size: larger;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 12px;
+}
+.all{
+  padding: 15px;
+
+}
+/*================================================================*/
+/*Botones de All items y On sale*/
+.buttonAllSale{
+  display: inline-block;
+  height: 320px;
+  width: 100%;
+}
+.alinear{
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  padding: 5px;
+}
+.alinear p{
+  text-align: right;
+  font-size: 26px;
+  color: #999999;
+  font-weight: bold;
+}
+.numero{
+  color: #FFC107;
+  font-size: 40px;
+}
+.buttonAllSale button{
+  background: white;
+  color: #999999;
+  border: 3px solid #999999;
+  width: 130px;
+  margin-left: 10px;
+  height: 70px;
+  font-size: larger;
+}
+/*===============================================================*/
+/*Category of products*/
+.tituloOfCategories{
+  padding: 15px;
+}
+.tituloOfCategories img{
+  width: 100%;
+
+
+}
+
+/*===========================================================*/
+/*Seccion footer*/
+hr{
+  color: #ecf0f1;
+}
+footer{
+  margin: 50px 290px;
+}
+.logo-black{
+  text-align: center;
+}
+.logo-black img{
+  width: 120px;
+  padding-bottom: 15px;
+}
+footer hr{
+  width: 70px;
+  height: 4px;
+  background: #999999;
+}
+.secciones{
+  display: flex;
+  justify-content: space-between;
+
+}
+.secciones h3{
+  color: red;
+
+}
+.secciones i{
+  padding-right: 20px;
+  color: black;
+  font-size: 30px;
+}
+footer nav a{
+  text-decoration: none;
+  color: black;
+  display: grid;
+  padding-top: 10px;
+}
