@@ -11,7 +11,7 @@ import About from './components/about.js';
 import TermsConditions from './components/termsConditions.js';
 import AllProducts from './components/allProducts.js';
 import DynamicCategory from './components/dynamicCategory.js';
-import DynamicId from './components/dynamicId.js';
+import DynamicId from './components/DynamicId/dynamicId.js';
 
 
 // <Route path="/product/:id" component={DynamicId} />
@@ -43,6 +43,7 @@ class App extends Component {
           <Route exact path="/" render={(props) => (<Home {...props} data={this.state.products}/>)}/>
           <Route exact path="/about" component={About} />
           <Route exact path="/terms&condition" component={TermsConditions} />
+          <Route exact path="/all-products" render={(props) => (<AllProducts {...props} data={this.state.products}/>)}/>
           <Route path="/product/:id" render={(props) => (<DynamicId {...props} data={this.state.products}/>)} />
           <Route path="/category/:type" render={(props) => (<DynamicCategory {...props} data={this.state.products}/>)} />
 

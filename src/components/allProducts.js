@@ -1,10 +1,49 @@
-// import React, { Component } from 'react';
-// import request from 'superagent';
-// import { Switch, Route, Link } from 'react-router-dom';
-//
-// import ContainerOfProducts from './containerProducts.js'
-//
-//
+import React, { Component } from 'react';
+import request from 'superagent';
+import { Switch, Route, Link } from 'react-router-dom';
+
+import ContainerOfProducts from './containerProducts.js'
+
+class AllProducts extends Component{
+  render(){
+    console.log(this.props.data);
+    let arrayOfAll = this.props.data
+    let prac = function () {
+      if (arrayOfAll.length > 0 ) {
+        let newAr = arrayOfAll.map(function (element) {
+          return <ContainerOfProducts id = {element._id} img ={element.imageLink} pTexto = {element.item} price = {element.price} />
+
+        })
+        return newAr
+      } else {
+        return <h4> LOADING PRODUCTS...</h4>
+      }
+    }
+    return (
+      <div className = "all">
+
+        <div className = "buttonAllSale">
+          <h1>All Products</h1>
+          <h3>All available listings</h3>
+          <span className="alinear">
+              <button className = "allItems" >All Items</button>
+              <button className = "onSale" >On Sale</button>
+              <div className = "count">
+                <p><span className = "numero">{arrayOfAll.length}</span> items showing</p>
+              </div>
+          </span>
+        </div>
+
+        <div className = "featuredApi">
+          {prac()}
+        </div>
+      </div>
+    )
+  }
+}
+
+export default AllProducts
+
 // class AllProducts extends Component{
 //   componentWillMount = () => {
 //     request
@@ -69,4 +108,3 @@
 //     }
 //   }
 // }
-// export default AllProducts

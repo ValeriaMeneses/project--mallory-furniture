@@ -131,6 +131,7 @@ h3{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 15px;
 }
 .containerOfproducts{
   border: 1px solid #999999;

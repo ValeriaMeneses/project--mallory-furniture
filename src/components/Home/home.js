@@ -18,10 +18,10 @@ class Home extends Component{
           <div className = "botonesBrowse">
             <Link to ="/category/seating">Seating</Link>
             <Link to ="/category/tables">Tables</Link>
-            <Link to ="/category/desk">Desk</Link>
+            <Link to ="/category/desks">Desk</Link>
             <Link to ="/category/storage">Storage</Link>
             <Link to ="/category/bedroom">Bedroom</Link>
-            <Link to ="/category/misc">Misc</Link>
+            <Link to ="/category/miscellaneous">Misc</Link>
           </div>
         </div>
 

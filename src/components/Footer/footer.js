@@ -30,7 +30,7 @@ class Footer extends Component{
             <nav>
               <Link to = "/category/seating">Seating</Link>
               <Link to = "/category/tables">Tables</Link>
-              <Link to = "/category/desk">Desk</Link>
+              <Link to = "/category/desks">Desk</Link>
             </nav>
           </div>
 
