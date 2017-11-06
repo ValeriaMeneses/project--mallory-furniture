@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 
-import ContainerOfProducts from './containerProducts.js'
-
-import imgSeating from '../images/category-seating.png'
-import imgTables from '../images/category-tables.png'
-import imgDesks from '../images/category-desks.png'
-import imgStorage from '../images/category-storage.png'
-import imgBedroom from '../images/category-bedroom.png'
-import imgMisc from '../images/category-miscellaneous.png'
-
-
-
+import imgSeating from '../../images/category-seating.png'
+import imgTables from '../../images/category-tables.png'
+import imgDesks from '../../images/category-desks.png'
+import imgStorage from '../../images/category-storage.png'
+import imgBedroom from '../../images/category-bedroom.png'
+import imgMisc from '../../images/category-miscellaneous.png'
 
 class Category extends Component{
   render(){
@@ -65,34 +60,5 @@ class Category extends Component{
       )
   }
 }
-class DynamicCategory extends Component {
-  render() {
-    const Type = this.props.match.params.type;
-    let category = this.props.data.filter(element => {
-      return element.category === Type
-    })
-    .map(function(element){
-      return <ContainerOfProducts id = {element._id} img ={element.imageLink} pTexto = {element.item} price = {element.price} />
-    })
 
-    return (
-      <div>
-
-      <div className = "buttonAllSale">
-          <Category type = {this.props.match.params.type} />
-          <span className="alinear">
-              <button className = "allItems" >All Items</button>
-              <button className = "onSale" >On Sale</button>
-              <div className = "count">
-                <p><span className = "numero">{category.length}</span> items showing</p>
-              </div>
-          </span>
-        </div>
-        <div className = "featuredApi">
-          {category}
-        </div>
-      </div>)
-  }
-}
-
-export default DynamicCategory;
+export default Category

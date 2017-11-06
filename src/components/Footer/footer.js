@@ -36,9 +36,9 @@ class Footer extends Component{
 
           <div className = "social">
             <h3>Social</h3>
-            <a href = "#"><i className ="fa fa-instagram"></i></a>
-            <a href = "#"><i className ="fa fa-twitter"></i></a>
-            <a href = "#"><i className ="fa fa-pinterest"></i></a>
+            <a href = "https://www.instagram.com/?hl=es"><i className ="fa fa-instagram"></i></a>
+            <a href = "https://twitter.com/?lang=es"><i className ="fa fa-twitter"></i></a>
+            <a href = "https://www.pinterest.es/"><i className ="fa fa-pinterest"></i></a>
           </div>
         </div>
       </footer>

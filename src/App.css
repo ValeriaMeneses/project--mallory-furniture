@@ -27,7 +27,6 @@ header{
   align-items: center;
   background: #222222;
   color: white;
-  padding:  20px 10px;
   font-size: larger;
 
 }
@@ -40,26 +39,98 @@ nav{
 }
 nav a{
   text-decoration: none;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .nav1 a{
   color: white;
 }
 .nav2 a{
-  color: #2196F3;
+  color:  #4fc3f7;
 }
-header i{
+/*==========================================================*/
+/*Shopping Cart*/
+.Cart {
   margin-left:  25px;
   background: #FFC107;
-  padding: 20px 15px;
+  padding: 28px 15px;
   color: black;
   font-size: 30px;
+}
+
+.shoppingCart{
+  width: 20%;
+  margin-left: 15px;
+  margin-bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.yourCart{
+  display: flex;
+  background: #2196F3;
+  width: 100%;
+}
+.yourCart button{
+  height: 34px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: #2196F3;
+}
+.yourCart i{
+  font-size: 40px;
+  color: rgba(189, 195, 199,1.0);
+}
+.yourCart h2{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.cartContainer{
+  background: rgba(236, 240, 241,0.6);
+  margin-top: 0;
+  height: 880px;
+  color: black;
+}
+
+.noItems{
+  text-align: center;
+  font-size: larger;
+  height: 100px;
+  background: white;
+  padding-top: 30px;
+}
+
+.squareOfProduct{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 5px;
+  height: 350px;
+}
+.squareOfProduct img{
+  width: 50%;
+  align-self: center;
+}
+.squareOfProduct button{
+  border: 0;
+  margin: 0;
+  width: 40px;
+  font-size: larger;
+  color: red;
+  background: white;
+  align-self: right;
+}
+.squareOfProduct span{
+  align-self: right;
+
 }
 /*==========================================================*/
 /*Seccion terminos y condiciones*/
 .terms-conditions{
-  padding: 10px 290px;
+  padding: 10px 350px;
   line-height: 30px;
   letter-spacing: 1px;
 }

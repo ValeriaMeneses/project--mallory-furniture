@@ -10,11 +10,9 @@ import Home from './components/Home/home.js';
 import About from './components/about.js';
 import TermsConditions from './components/termsConditions.js';
 import AllProducts from './components/allProducts.js';
-import DynamicCategory from './components/dynamicCategory.js';
+import DynamicCategory from './components/DynamicCategory/dynamicCategory.js';
 import DynamicId from './components/DynamicId/dynamicId.js';
 
-
-// <Route path="/product/:id" component={DynamicId} />
 
 class App extends Component {
     componentWillMount = () => {

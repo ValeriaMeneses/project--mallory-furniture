@@ -5,6 +5,7 @@ class Nav2 extends Component {
   render(){
     return(
       <nav className = "nav2">
+        <Link to ="/all-products">All</Link>
         <Link to ="/category/seating">Seating</Link>
         <Link to ="/category/tables">Tables</Link>
         <Link to ="/category/desks">Desk</Link>
