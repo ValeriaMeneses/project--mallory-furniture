@@ -30,7 +30,6 @@ class ButtonShopping extends Component {
           <ShoppingSquare />
         </div>
       )
-      // return squareShopping.style.display = "inline-block"
     }
     return(
       <button className = "Cart" onClick = {this.showSquare}><i className="fa fa-shopping-cart"></i></button>

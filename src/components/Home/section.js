@@ -8,8 +8,8 @@ class SectionProduct extends Component{
     let arrayOf6 = this.props.data
     let prac = function () {
       if (arrayOf6.length > 0 ) {
-        let newAr = arrayOf6.map(function (element) {
-          return <ContainerOfProducts id = {element._id} img ={element.imageLink} pTexto = {element.item} price = {element.price} />
+        let newAr = arrayOf6.map(function (element, i) {
+          return <ContainerOfProducts key= {i} id = {element._id} img ={element.imageLink} pTexto = {element.item} price = {element.price} />
 
         }).slice(0, 6)
         return newAr

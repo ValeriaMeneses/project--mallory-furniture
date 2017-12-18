@@ -2,7 +2,29 @@ import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 
 class ProductSingle extends Component{
+  constructor(){
+    super()
+    this.state = {
+      send: false
+    }
+        this.sendProduct = this.sendProduct.bind(this);
+  }
+  sendProduct = function () {
+    if (this.state.send === false) {
+      this.setState({
+        send: true
+      })
+    }else {
+      this.setState({
+        send: false
+      })
+    }
+    // console.log(this.state.send);
+  }
   render(){
+    if (this.state.send === true) {
+      // console.log(this.props);
+    }
     return(
         <div className = "productSingle">
           <img src = {this.props.img} />
@@ -23,7 +45,7 @@ class ProductSingle extends Component{
                 <span>L:{this.props.length}  </span>
                 <span>H:{this.props.height}</span>
               </div>
-              <button>Add to Cart</button>
+              <button onClick = {this.sendProduct}>Add to Cart</button>
             </div>
           </div>
         </div>
